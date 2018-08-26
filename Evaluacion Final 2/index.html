@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,113 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css\estilos.css" />
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <script src="main.js"></script>
+    <style>
+       @-webkit-keyframes rotacion{
+           100%{
+               transform: rotate(10deg)
+        }
+        }
+        @-webkit-keyframes traslacion{
+            100%{
+                transform: translate(5px,-20px)
+            }
+        }
+        @-webkit-keyframes slide-up {
+            0% {
+                margin-top: 150%;
+                height: 300%;
+            }
+            60% {
+                margin-top: -5%;
+                height: 100%;
+            }
+            100% {
+                margin-top: 0%;
+                height: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <div class="contenedor" id="encabezado">
             <p>Comenzando con la fotografía</p>
             <nav>
                 <ul>
-                    <li class="navegador"><a href="index.html">Inicio</a></li>
-                    <li class="navegador"><a href="paisajes.html">Paisajes</a></li>
-                    <li class="navegador"><a href="retratos.html">Retratos</a></li>
+                    <li class="navegador">
+                        <a class="a1" href="index.html">Inicio</a>
+                    </li>
+                    <li class="navegador">
+                        <a class="a1" href="paisajes.html">Paisajes</a>
+                    </li>
+                    <li class="navegador">
+                        <a class="a1" href="retratos.html">Retratos</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+    <section>
+        <div id="secprin">
+            <figure>
+                <img id="imgprin" src="imagenes/imagenprincipal.jpg" alt="Imagen Principal">
+            </figure>
+        </div>
+    </section>
+    <section>
+        <div id="secsecu">
+            <figure>
+                <div id="imgsecu1">
+                    <a href="paisajes.html">
+                        <img id="paiprin"  src="imagenes/paiprin.jpg" alt="Paisaje Principal">
+                    </a>
+                </div>
+                <div id="imgsecu2">
+                    <a href="retratos.html">
+                        <img id="retprin" src="imagenes/retprin.jpg" alt="Retrato Principal">
+                    </a>
+                </div>
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <div id="piepag">
+            <div id="pie1">
+                <h2>Contacto</h2>
+                <p>
+                    <a class="contacto" href="mailto:santaigoserafini04@hotmail.com">Santiago Serafini</a>
+                </p>
+                <p>
+                    Teléfono: +54 9 2995201690
+                </p>
+                <p>
+                    San Martin 1050
+                </p>
+            </div>
+            <div id="pie2">
+                <h2>Terminos</h2>
+                <p>Para uso exclusivo no comercial</p>
+            </div>
+            <div id="pie3">
+                <h2>Redes Sociales</h2>
+                <img class="icono" src="imagenes/ic_fb.png" alt="Icono Facebook" style="vertical-align: middle">
+                <a class="a2" href="https://www.facebook.com/santiago.serafini">Facebook</a>
+                <p>
+                    <img class="icono" src="imagenes/ic_tw.png" alt="Icono Twitter" style="vertical-align: middle">
+                    <a class="a2" href="https://twitter.com/GGa_x?https:/twitter.com/CCa_Q&gclid=CjwKCAjwtIXbBRBhEiwAWV-5nlksFc4_G4uv_AwnwGuEdedPb-Cs37cCapNprhaO-ugVY4lEqV038xoCe_8QAvD_BwE">Twitter</a>
+                </p>
+                <p>
+                    <img class="icono" src="imagenes/ic_ig.png" alt="Icono Twitter" style="vertical-align: middle">
+                    <a class="a2" href="https://www.instagram.com/santiago_serafini/?hl=es-la">Instagram</a>
+                </p>
+            </div>
+            <div id="pie4">
+                <h2>Derechos</h2>
+                <p>Santiago Serafini</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
