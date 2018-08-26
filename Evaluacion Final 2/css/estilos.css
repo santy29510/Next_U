@@ -1,38 +1,51 @@
+*{
+    margin: 0;
+}
 body{
-animation: slide-up 1s;
+    background: #02010a;
+	color: white;
+	font-size: 16px;
+	font-family: 'Dancing Script';
+    font-size: 14pt;
 }
 @font-face {
         font-family: 'Dancing Script', cursive;
         src: url(Dancing+Script);
 }
+header{
+background: #5b7989;
+width: 100%;
+border-radius: 10px 10px 0 0;
+text-shadow: 2px 2px #02010a;
+padding: 15px 0;
+display: flex;
+display: -webkit-flex;
+flex-flow: row wrap;
+-webkit-flex-flow: row wrap;
+animation: slide-up 1s;
+}
+#contenido{
+    width: 100%;
+    margin: 0 auto;
+    /* min-height: 200px; */
+}
 #encabezado{
     width: 100%;
-    height: 20%;
-    background-color: #5b7989;
-    text-align: left;
+    text-indent: 15px;
     font-size: 200%;
-    font-family: Dancing Script, cursive;
-    color: white;
-    text-shadow: 2px 2px #02010a;
-    border-radius: 10px 10px 0px 0px;
-    display:flex; 
-    flex-direction:row; 
-    justify-content:space-around;
-    align-items: center;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    height: 100%;
+#navbtn{
+  width: 30%;
+  font-size: 18pt;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
 }
-.navegador{
-    font-family: Dancing Script, cursive;
-    color: white;
-    text-shadow: 2px 2px #02010a;
-    display: block;
-    float: right;
-    padding: 10%;
+.a1{
+    padding: 10px;
 }
 .a1:link{
     color: white;
@@ -56,6 +69,7 @@ ul{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    box-shadow: 2px 2px black;
 }
 #secsecu{
     background-color: bisque;
@@ -64,6 +78,7 @@ ul{
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    padding: 30px;
 }
 #imgsecu1{
     width: 100%;
@@ -200,4 +215,32 @@ figure{
 }
 #ret3{
     filter: sepia(90%);
+}
+#paiprin{
+    margin-left: 35%;
+    width: 60%;
+    box-shadow: 2px 2px black;
+}
+#retprin{
+    width: 60%;
+    box-shadow: 2px 2px black;
+}
+h2{
+    color: black !important;
+}
+@media screen and (max-width: 1000px){
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+    #navbtn, #encabezado{
+        width: 100%;
+        text-align: center;
+    }
+    .secsecu{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
 }
