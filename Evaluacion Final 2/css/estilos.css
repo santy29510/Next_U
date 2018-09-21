@@ -228,7 +228,7 @@ figure{
 h2{
     color: black !important;
 }
-@media screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px){
 	#contenido{
 		width: 100%;
 		margin: 0 auto;
@@ -241,6 +241,40 @@ h2{
         width: 100%;
     }
     footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    #secfigprin{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #paiprin{
+        margin-left: auto;
+    }
+    #piepag{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-self: auto;
+        width: 100%;
+    }
+    #pie1{
+        width: 100%;
+    }
+    #pie2{
+        width: 100%;
+    }
+    #pie3{
+        width: 100%;
+    }
+    #pie3{
         width: 100%;
     }
 }
