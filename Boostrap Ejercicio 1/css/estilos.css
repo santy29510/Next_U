@@ -1,0 +1,95 @@
+.cinema-body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.img-logo{
+    width: 100px;
+}
+.navbar-inverse{
+    min-height: 10%;
+    background: #9C27B0;
+    border: none;
+    opacity: 0.9;
+}
+.container-fluid{
+    margin-top: 73px;
+}
+.jumbotron{
+    min-height: 500px;
+    border-radius: 10px;
+    background-image: url(../img/shutterstock_92369284-1.jpg);
+    margin-bottom: 0px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.titulo-cartelera{
+    min-height: 45px;
+    background: #AB47BC;
+}
+.titulo-text{
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 18px;
+}
+.movies-row{
+    min-height: 350px;
+    background: rgb(112, 112, 112);
+    opacity: 0.6;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.movies-column{
+    margin-top: 5px;
+    background: #E1BEE7;
+    opacity: 0.6;
+    min-height: 330px;
+    border: 1px dashed black;
+}
+.left-column{
+    border-right: 1px dashed black;
+}
+
+@media (max-width 770px){
+    .right-column{
+        display: none;
+    }
+    .movies-row{
+        min-height: 250px;
+    }
+    .movies-column{
+        min-height: 230px;
+    }
+
+}
+.jumbotron-img {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.jumbotron-text {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+.redes-sociales{
+    margin: 20px;
+}
+.img-social{
+    height: 40px;
+    width: 40px;
+}
+.img-movies{
+    opacity: 1;
+    height: 260px;
+    padding: 6px;
+    margin-top: 22px;
+    order: initial;
+}
+.movie-title{
+    color: rgb(255, 249, 249);
+}
