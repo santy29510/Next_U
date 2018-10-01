@@ -1,0 +1,43 @@
+.principal{
+  min-height: 4rem !important;
+}
+.grupos{
+  min-height: 50rem !important;
+
+}
+.principal-cuerpo{
+  min-height: 50rem !important;
+}
+.noticias{
+  min-height: 50rem !important;
+}
+.publicaciones{
+  min-height: 50rem !important;
+  
+}
+.secundaria-cuerpo{
+  min-height: 50rem !important;
+}
+.act-recientes{
+  min-height: 25rem !important;
+  padding: 0 !important;
+}
+.chat{
+  min-height: 25rem !important;
+  padding: 0 !important;
+}
+.pub-1{
+  min-height: 7rem !important;
+  padding: 2rem !important;
+}
+.pub-2{
+  min-height: 17rem !important;
+  padding: 2rem !important
+}
+.pub-3{
+  min-height: 17rem !important;
+  padding: 2rem !important
+}
+.img-nav{
+  margin-top: 0.5rem;
+}

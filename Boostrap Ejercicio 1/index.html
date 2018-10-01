@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <script src='js/bootstrap.min.js'></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAtMdynsFm1xAo-40TmKYHkoPMGRt-RQ-o",
+        authDomain: "prueba-host-5fa0d.firebaseapp.com",
+        databaseURL: "https://prueba-host-5fa0d.firebaseio.com",
+        projectId: "prueba-host-5fa0d",
+        storageBucket: "prueba-host-5fa0d.appspot.com",
+        messagingSenderId: "301019367995"
+    };
+    firebase.initializeApp(config);
+    </script>
     <title>Cartelera de cine</title>
 </head>
 <body class="cinema-body">
@@ -42,69 +56,144 @@
                   <img class="img-movies" src="img/movie_1.jpg"/>
                 </div>
                 <div class="row movie-title text-capitalize">skull horror 3d</div>
-                <div class="row movie-titel">Sala 2</div>
+                <div class="row movie-title">Sala 2</div>
             </div>
             <div class='col-xs-4 col-sm-4 col-md-2 col-lg-2 movies-column text-center'>
                 <div class='row movie-title'>
                     <img class="img-movies" src="img/movie_2.jpg"/>
                 </div>
                 <div class="row movie-title text-capitalize">the car</div>
-                <div class="row movie-titel">Sala 3</div>
+                <div class="row movie-title">Sala 3</div>
             </div>
             <div class='col-xs-4 col-sm-4 col-md-2 col-lg-2 movies-column text-center'>
                 <div class='row movie-title'>
                     <img class="img-movies" src="img/movie_7.jpg" />
                 </div>
                 <div class="row movie-title text-capitalize">retro movies</div>
-                <div class="row movie-titel">Sala 4</div>
+                <div class="row movie-title">Sala 4</div>
             </div>
             <div class='col-xs-4 col-sm-4 col-md-2 col-lg-2 movies-column text-center'>
                 <div class='row movie-title'>
                     <img class="img-movies" src="img/movie_9.jpg" />
                 </div>
                 <div class="row movie-title text-capitalize">a horror night</div>
-                <div class="row movie-titel">Sala 5</div>
+                <div class="row movie-title">Sala 5</div>
             </div>
             <div class='col-md-2 col-lg-2 movies-column text-center right-column'>
                 <div class='row movie-title'>
                     <img class="img-movies" src="img/movie_5.jpg" />
                 </div>
                 <div class="row movie-title text-capitalize">darkness halloween</div>
-                <div class="row movie-titel">Sala 1</div>
+                <div class="row movie-title">Sala 1</div>
             </div>
             <div class='col-md-2 col-lg-2 movies-column text-center right-column'>
                 <div class='row movie-title'>
                     <img class="img-movies" src="img/movie_6.jpg" />
                 </div>
                 <div class="row movie-title text-capitalize">the camera</div>
-                <div class="row movie-titel">Sala 8</div>
+                <div class="row movie-title">Sala 8</div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 xol-xs-12 titulo-cartelera left-column"></div>
-            <div class="col-lg-4 col-md-4 right-column"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12 xol-xs-12 titulo-cartelera left-column">
+                <header class="titulo-text text-capitalize text-center">próximos estrenos</header>
+            </div>
+            <div class="col-lg-4 col-md-4 titulo-cartelera right-column">
+                <header class="titulo-text text-capitalize text-center">mejor calificada</header>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 left-column movies-row">
                 <div class="row movies-row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column">
+                        <div class='row movie-title'>
+                            <img class="img-movies" src="img/movie_3.jpg" />
+                        </div>
+                        <div class="row movie-title text-capitalize">a wizzard story</div>
+                        <div class="row movie-title">2017</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column">
+                        <div class='row movie-title'>
+                            <img class="img-movies" src="img/movie_8.jpg" />
+                        </div>
+                        <div class="row movie-title text-capitalize">a horror night</div>
+                        <div class="row movie-title">2018-01</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column">
+                        <div class='row movie-title'>
+                            <img class="img-movies" src="img/movie_4.jpg" />
+                        </div>
+                        <div class="row movie-title text-capitalize">star galaxy 3D</div>
+                        <div class="row movie-title">2018-05</div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 movies-row right-column">
                 <div class="row movies-row">
-                    <div class="col-md-12 col-lg-12 movies-column text-center"></div>
+                    <div class="col-md-12 col-lg-12 movies-column text-center">
+                            <div class='row movie-title'>
+                                    <img class="img-movies" src="img/movie_1.jpg" />
+                                </div>
+                                <div class="row movie-title text-capitalize">skull horror 3D</div>
+                                <div class="row movie-title">Calificacion 10/10</div> 
+                    </div>
                 </div>
             </div>
         </div>
         <div class='row'>
-            <div class='col-lg-6 col-md-6 titulo-cartelera right-column left-column'></div>
-            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-cartelera'></div>
+            <div class='col-lg-6 col-md-6 titulo-cartelera right-column left-column'>
+                <header class="titulo-text text-capitalize text-center">Servicios</header>
+            </div>
+            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-cartelera'>
+                <header class="titulo-text text-capitalize text-center">Registrate</header>
+            </div>
         </div>
         <div class='row'>
-            <div class='col-lg-6 col-md-6 movies-row right-column left-column'></div>
-            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 movies-row'></div>
+            <div class='col-lg-6 col-md-6 movies-row right-column left-column'>
+                <p class="service-text">En nuestro cine te ofrecemos los siguientes servicios para brindarte la mejor diversión y que disfrutes al máximo</p>
+                <dl class="dl-horizontal">
+                    <dt class="service-text">Salas de cine</dt>
+                        <dd class="service-text">Las mejores salas de cine con la más nueva tecnología: Salas 3D, 4D y Vibra Sound</dd><br>
+                    <dt class="service-text">Videojuegos</dt>
+                        <dd class="service-text">Gran variedad de juegos electrónicos para que te diviertas al máximo</dd><br>
+                    <dt class="service-text">Restaurantes</dt>
+                        <dd class="service-text">Gran variedad de comidas y dulces para que disfrutes de algo rico antes, durante o después de la pelicula</dd>
+                </dl>
+                <h2 class="text-center text-uppercase welcome-title">TE ESPERAMOS!!!!</h2>
+            </div>
+            <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 movies-row'>
+                <form action="" role="form">
+                    <div class="form-group">
+                        <div>
+                            <label for="nombre" class="etiquetas">Nombre y Apellido</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" class="form-control">
+                        </div>
+                        <div>
+                            <label for="telefono" class="etiquetas">Teléfono</label>
+                            <input type="number" name="telefono" id="telefono" placeholder="+54 9 299-5XXXXXX" class="form-control">
+                        </div>
+                        <div>
+                            <label for="email" class="etiquetas">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="example@example.com" class="form-control">
+                        </div>
+                        <div>
+                            <label for="naciemiento" class="etiquetas">Fecha de naciemiento</label>
+                            <input type="date" name="nacimiento" id="naciemiento" class="form-control">
+                        </div>
+                        <div>
+                            <label for="sexo1" class="etiquetas">Masculino</label>
+                            <input type="checkbox" name="sexo1" id="sexo1">
+                        </div>
+                        <div>
+                            <label for="sexo2" class="etiquetas">Femenino</label>
+                            <input type="checkbox" name="sexo2" id="sexo2">
+                        </div>
+                        <div>
+                            <input type="button" name="boton" value="Enviar" class="btn btn-dafault">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
