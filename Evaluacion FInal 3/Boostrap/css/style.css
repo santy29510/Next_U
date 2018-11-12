@@ -1,0 +1,72 @@
+.nav-prin{
+    min-height: 7rem;
+    background-color: #512DA8;
+    color: aliceblue; 
+}
+.logotipo-musica{
+    width: 7%;
+    filter: invert(100%);
+    margin-top: 10px;
+}
+.nav-redes{
+    filter: invert(100%);
+    width: 3%;
+    margin: 0px 0px 10px 15px;
+}
+.nav-secu{
+    background: rgb(140, 115, 199);
+    align-content: space-between;
+    margin: 0;
+}
+.nav-btn{
+    background: rgb(177, 11, 199);
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 65px;
+}
+.noticias{
+    background: rgb(215, 104, 243);
+   
+}
+.busqueda{
+    background: rgb(127, 238, 253);
+    
+}
+.img-not{
+    width: 50%;
+    float: right;
+    border-radius: 10px;
+    
+}
+.not1{
+    margin-top: 30px;
+    background: rgb(131, 255, 249);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 15px;
+    padding: 10px;   
+}
+.icon-user{
+    width: 50px;
+}
+.comentarios{
+    margin-top: 10px;
+    align-items: center;
+    align-content: flex-end;
+}
+.search_op{
+    background: rgb(215, 104, 243);
+}
+.buscar{
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.buscar_btn{
+    margin-left: 10px;
+}
+.acc_bus{
+    margin-top: 20px;
+    color: rgb(177, 11, 199);
+    border: none;
+}

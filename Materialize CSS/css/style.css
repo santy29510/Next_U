@@ -28,15 +28,15 @@
 }
 .pub-1{
   min-height: 7rem !important;
-  padding: 2rem !important;
+  margin: 5px;
 }
 .pub-2{
   min-height: 17rem !important;
-  padding: 2rem !important
+  margin: 5px;
 }
 .pub-3{
   min-height: 17rem !important;
-  padding: 2rem !important
+  margin: 5px;
 }
 .img-nav{
   margin-top: 0.5rem;

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FOR IN</h1>
+    <p id="salida"></p>
+</body>
+<script>
+    var texto=""
+    var stat={
+        cod:"001",
+        nombre:"Fuerza",
+        valor:18
+    };
+    var x=""
+    for(x in stat){
+        texto+=stat[x]+"<br>"
+    }
+    document.getElementById("salida").innerHTML=texto;
+</script>
+</html>

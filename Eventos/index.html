@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="cargar()">
+    <h1 style="text-align: center">Hoja de Vida</h1>
+    <h3>Informacion Personal</h3>
+    <form onreset="restablecer()">
+        Nombre:
+        <input id="nombre" type="text" onchange="mayusnom()"><br><br>
+        Apellido:
+        <input id="apellido" type="text" onchange="mayusape()"><br><br>
+        Direccion:
+        <input type="text"><br><br>
+        Edad:
+        <input type="text"><br><br>
+        Fecha de nacimiento:
+        <input type="date" name="" id=""><br><br>
+        Lugar de Nacimiento:
+        <input type="text"><br><br>
+        Estado Civil:
+        <input type="text"><br><br>
+    
+    <h3>Informacion Académica</h3>
+    
+        Universidad:
+        <input type="text"><br><br>
+        Profesión:
+        <input type="text"><br><br>
+        Observaciones:
+    </form>
+    <textarea rows="4" cols="40" placeholder="Observaciones" onselect="seleccionar()"></textarea><br><br>
+    <input type="submit" value="Enviar" onclick="enviar()">
+    <input type="reset" value="Restablecer">
+</body>
+<script>
+    function cargar(){
+        alert("Bienvenido a su formato de Hoja de vida")
+    }
+    function enviar(){
+        alert("Su Hoja de Vida ha Sido Guardada Correctamente")
+    }
+    function seleccionar(){
+        alert("Se ha seleccionado el texto")
+    }
+    function mayusnom(){
+        var x=document.getElementById("nombre");
+        x.value=x.value.toUpperCase();
+    }
+    function mayusape() {
+        var x = document.getElementById("apellido");
+        x.value = x.value.toUpperCase();
+    }
+    function restablecer(){
+        alert("Se ha restablecido el formulario");
+    }
+</script>
+</html>

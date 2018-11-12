@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Else IF</h1>
+    <p id="nota"></p>
+    <button onclick="validarNota()">Validar Nota</button>   
+</body>
+<script>
+    var nota=2;
+    function validarNota(){
+        if (nota>3.0 && nota<4.0){
+            document.getElementById("nota").innerHTML="Su nota es de nivel medio!"
+        } else if (nota>4.0 && nota<5.0){
+            document.getElementById("nota").innerHTML="Su nota es de nivel alto!"
+        }else{
+            document.getElementById("nota").innerHTML="Su nota es de nivel bajo!"
+        }
+    }
+</script>
+</html>
