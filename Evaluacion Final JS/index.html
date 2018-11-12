@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluacion Final JS</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Import estilos.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div class="container-fluid">
+        <div class="row nav-row">
+            <div class="col l12 nav">
+                <h1>Datos Estudiantes</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l4 calculos">
+                <button class="btn-large red waves-effect" onclick="leerJSON()">Mostar datos Oficiales</button><br><br>
+                <button class="btn-large red waves-effect" onclick="promedio()">Calcular promedio de notas</button><br><br>
+                <button class="btn-large red waves-effect" onclick="maxnote()">Nota mas alta</button><br><br>
+                <button class="btn-large red waves-effect" onclick="minnote()">Nota mas baja</button>
+            </div>
+            <div class="col l4 datos">
+                <div class=" col l12 datos-est">Datos Oficiales de estudiantes
+                    <p id="alumnos"></p>
+                </div>
+                <div class="col l4 notas">Promedio de notas
+                    <p id="media"></p>
+                </div>
+                <div class="col l4 notas">Nota más alta
+                    <p id="notamasalta"></p>
+                </div>
+                <div class="col l4 notas">Nota mas baja
+                    <p id="notamasbaja"></p>
+                </div>
+            </div>
+            <div class="col l4 side-img">
+                <img src="img/alumnos.jpg" alt="alumons" class="img-deco">
+            </div>
+        </div>      
+    </div>
+   
+</body>
+<script type="text/javascript">
+    var estudiantes=[
+        { "codigo": "000-01", "nombre": "Silvano Natalini", "nota": 1 },
+        { "codigo": "000-02", "nombre": "Oscar Ferrari", "nota": 2 },
+        { "codigo": "000-03", "nombre": "Dario Linares", "nota": 3 },
+        { "codigo": "000-04", "nombre": "Carlos Contreras", "nota": 4 },
+        { "codigo": "000-05", "nombre": "Daniel Tierzo", "nota": 5 },
+        { "codigo": "000-06", "nombre": "Fabricio Morales", "nota": 6 },
+        { "codigo": "000-07", "nombre": "Natalia Martinez", "nota": 7 },
+        { "codigo": "000-08", "nombre": "Ornella Cocci", "nota": 8 },
+        { "codigo": "000-09", "nombre": "Georgina Rojas", "nota": 9 },
+        { "codigo": "000-10", "nombre": "Andres Mendez", "nota": 10 }
+    ]
+
+    var jsObj = JSON.parse(jsonText);
+
+    function leerJSON (json) {
+        
+        var out=""
+        var i;
+        for(i=0;i<estudiantes.length;i++){
+            out+=("Codigo: "+estudiantes[i].codigo+" - "+"Nombre: "+estudiantes[i].nombre+" - "+"Nota: "+estudiantes[i].nota+"<br>");
+        }
+        
+        document.getElementById("alumnos").innerHTML=out;
+    }
+    function promedio(json){
+        var out="";
+        var sumanotas=0.0;
+        var aux=out+="";
+        for(var i =0;i<estudiantes.length;i++){
+            sumanotas+=estudiantes[i].nota;
+        }
+    document.getElementById("media").innerHTML=sumanotas/10;
+    }
+    function maxnote(json){
+        var out="";
+        var notaAlta=estudiantes[0].nota;
+        var pos=0;
+        var aux=out+="";
+        for(i=0;i<estudiantes.length;i++){
+            if(estudiantes[i].nota>notaAlta){
+                notaAlta=estudiantes[i].nota;
+                pos=i;
+            }
+        }
+    document.getElementById("notamasalta").innerHTML=aux+"La nota mas alta es de: "+estudiantes[pos].nombre+"<br>"+" Con una nota de: "+estudiantes[pos].nota
+    }
+    function minnote(json) {
+        var out = "";
+        var notaBaja = estudiantes[0].nota;
+        var pos = 0;
+        var aux = out += "";
+        for (i = 0; i < estudiantes.length; i++) {
+            if (estudiantes[i].nota < notaBaja) {
+                notaBaja = estudiantes[i].nota;
+                pos = i;
+            }
+        }
+        document.getElementById("notamasbaja").innerHTML = aux + "La nota mas baja es de: " + estudiantes[pos].nombre + "<br>" + " Con una nota de: " + estudiantes[pos].nota
+    }
+       
+minnote(jsObj);
+maxnote(jsObj);
+promedio(jsObj);    
+leerJSON(jsObj);
+</script>
+</html>
