@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Registro de Estudiantes</h1>
+    <div id="div-form">
+    <form action="">
+        <label for="nombre">Nombre
+            <input type="text" id="nombre">
+        </label>
+        <br>
+        <br>
+        <label for="apellido">Apellido
+            <input type="text" id="apellido">
+        </label>
+        <br>
+        <br>
+        <label for="direccion">direccion
+            <input type="text" id="direccion">
+        </label>
+        <br>
+        <br>
+        <label for="edad">Edad
+            <input type="number" id="edad">
+        </label>
+        <br>
+        <br>
+        <label for="fecha-nac">Fecha de nacimeinto
+            <input type="date" id="fecha-nac">
+        </label>
+        <br>
+        <br>
+        <label for="lugar-nac">Lugar de nacimeinto
+            <input type="text" id="lugar-nac">
+        </label>
+        <br>
+        <br>
+        <label for="estado-civ">Estado Civil
+            <select id="estado-civ">
+                <option value="Soltero">Soltero</option>
+                <option value="Casado">Casado</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <button type="submit" onclick="registro()">Registrar alumno</button>
+        <input type="button" onclick="cambiarTipo()" value="Cambiar Tipo">
+        <input type="button" onclick="cambiarColor()" value="Cambiar Color">
+    </form>
+    </div>
+</body>
+<script>
+    function registro(){
+        alert("El alumno ha sido registrado!");
+    }
+
+    function cambiarTipo(){
+        var p=document.getElementById("titulo");
+        p.innerHTML="Registro de Docentes";
+    }
+    function cambiarColor(){
+        var  divs = document.getElementsByTagName("div");
+        for(var i =0;i<divs.length;i++){
+            divs[i].style.color="red";
+        }
+    }
+</script>
+</html>

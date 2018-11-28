@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operando con Nodos</title>
+</head>
+<body>
+    <h1 id="texto1">Primer Texto</h1>
+    <p id="texto2">Segundo Texto</p>
+    <h1>Elementos</h1>
+    <div id="miDiv"><p>Nombre</p><input type="text"><input type="button" value="Aceptar"></div>
+    <br>
+        <input type="button" value="Ver tipo de elementos" onclick="nodosHijos()">
+        <input type="button" value="Primer elemento" onclick="primerNodo()">
+        <input type="button" value="Ultimo elemento" onclick="ultimoNodo()">
+    <br>
+    <p id="mensaje"></p><p id="mensaje1"></p><p id="mensaje2"></p>
+</body>
+<script>
+    
+    var cambiarTexto=document.getElementById("texto1").childNodes[0].nodeValue;
+    document.getElementById("texto2").innerHTML=cambiarTexto;
+    
+    function nodosHijos(){
+        var texto="";
+        var div=document.getElementsByTagName("div")[0];
+
+        for(var i=0;i<div.childNodes.length;i++){
+            texto+=div.childNodes[i].nodeName+"<br>";
+        }
+        document.getElementById("mensaje").innerHTML=texto;
+    }
+    function primerNodo(){
+        var texto="";
+        var div=document.getElementById("miDiv");
+        var mensaje=document.getElementById("mensaje1");
+        mensaje.innerHTML="El primer nodo del div es :"+div.firstChild;
+    }
+    function ultimoNodo(){
+            var texto = "";
+            var div = document.getElementById("miDiv");
+            var mensaje = document.getElementById("mensaje2");
+            mensaje.innerHTML = "El último nodo del div es :" + div.lastChild;
+        }
+</script>
+</html>
