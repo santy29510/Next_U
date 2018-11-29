@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<title>Registro de estudiantes</title>
+<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+    <div class="container-fluid titulo">
+    <h1>Registro de estudiantes</h1>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-lg-6 form-estudiante">
+                <form id="nuevo-estudiante">
+                    <div class="form-group">
+                        <label for="codigo">Código</label>
+                        <input type="number" id="codigo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="estudiante">Nombre y Apellido</label>
+                        <input type="text" id="nombre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nota">Nota</label>
+                        <input type="number" id="nota" class="form-control">
+                    </div>
+                    <input type="submit" value="Resgistrar Estudiantes" class="btn btn-secondary form-control"/>
+                </form>
+            </div>
+            <div class="col col-lg-5">
+                <button id="mostrar-tabla" class="btn btn-secondary form-control">Mostrar estudiantes</button>
+                <br>
+                <br>
+                <div id="tabla-estudiantes">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Estudiante</th>
+                                <th>Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody id="estudiantes-tabla">
+
+                        </tbody>
+
+                    </table>
+                </div>
+                
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col col-lg-6">
+                    <input type="button" class="btn btn-secondary form-control" value="Promedio de notas" id="promedio">
+                    <br>
+                    <br>
+                    <input type="button" class="btn btn-secondary form-control" value="Nota mas alta" id="nota-alta">
+                    <br>
+                    <br>
+                    <input type="button" class="btn btn-secondary form-control" value="Nota mas Baja" id="nota-baja">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col col-lg-6 resultados">
+                <p id="datos"></p>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

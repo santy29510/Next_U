@@ -1,0 +1,38 @@
+body{
+    background-color: #E0E0E0 !important;
+}
+h1{
+    color: white !important;
+    text-align: center;
+    
+}
+.form-estudiante{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 22rem !important;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+#tabla-estudiantes{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.titulo{
+    background: #424242 !important;
+    min-height: 5rem;
+    padding: 5px;
+    
+}
+.resultados{
+    background: #424242;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 10rem !important;
+    font-size: 25px;
+    margin-left: 5px;
+}
